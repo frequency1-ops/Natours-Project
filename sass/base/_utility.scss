@@ -1,8 +1,12 @@
+@use "../abstract/mixins" as *;
 .u-center-text{
     text-align: center !important;
 }
 .u-margin-bottom-big{
     margin-bottom: 8rem !important;
+    @include respond(tab-port){
+        margin-bottom: 3rem; 
+    }
 }
 
 .u-margin-bottom-small{
